@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-color: #E5E5E5;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a, a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.row{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.my-container{
+    /* background-color: blue; */
+    height: auto;
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.nav-dark{
+    background-color: black !important;
+    color: white !important;
+}
+
+.vert-nav-line{
+    width: 1px;
+    height: 5vh;
+    background-color: white;
+}
+
+.socials{
+    margin-right: auto !important;
+}
+
+.social-media{
+    aspect-ratio: 1 !important;
+    height: 25px;
+    width: 25px;
+}
+
+.social-media > svg{
+    width: 25px;
+    height: 25px;
+    fill: none;
+}
+
+.social-media > svg > path{
+    fill: white;
+}
+
+.navbar-collapse{
+    display: flex!important;
+    flex-basis: auto;
+}
+
+.card-img-top{
+    height: 30%;
+    width: 30%;
+    margin: auto;
+}
+
+.bio-card-title{
+    font-weight: 600;
+    color: #4F4D4D;
+}
+
+.bio-card-text{
+    font-size: 14px;
+}
+
+.project-title{
+    font-weight: 600;
+    color: #4F4D4D;
+    font-size: 23px;
+    /* margin: auto; */
+}
+
+.project-card{
+    max-width: 900px;
+    padding:10px;
+    margin: 10px;
+    margin-left: 0px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.project-card:hover{
+    /* top: -2px;
+    box-shadow: 0px 20px 40px 0px rgba(61, 65, 84, 0.15); */
+    animation: cardAnim 1s forwards;
+}
+
+.project-card > .card-body > .card-text:hover {
+    cursor: pointer;
+}
+
+@keyframes cardAnim {
+    to {
+        top: -2px;
+        box-shadow: 0px 20px 40px 0px rgba(61, 65, 84, 0.15);
+    }
+  }
+
+.project-card > .card-body > .card-title{
+    font-weight: 600;
+    color: #4F4D4D;
+    font-size: 20px;
+}
+
+.project-card > .card-body > .card-text{
+    font-size: 15px;
+    color: black;
+}
+
+.card-img-left{
+    height: 15%;
+    width: 15%;
+    margin: auto;
+    font-size: 14px;
+}
+
+.tech-stack{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tech-tags{
+  /* width: 150px; */
+  padding: 2px 15px;
+  text-align: center;
+  color: black;
+  background-color: #E5E5E5;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* PROJECT CSS */
+.proj-side-nav {
+    margin-top: 130px;
+    margin-left: 40px;
+    position: fixed;
+    width: 20%;
+}
+
+.proj-side-nav > .card > ul{
+    list-style: none;
+}
+
+.proj-side-nav > .card{
+    background-color: transparent;
+    border-style: none;
+}
+
+.proj-side-nav > .card > ul > li{
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.proj-side-nav > .card > ul > hr{
+    width: 85%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.proj-side-nav > .card > ul > li > a{
+    color: black;
+}
+
+.proj-container{
+    position: relative;
+}
+
+.proj-row{
+    position: relative;
+}
+
+.proj-content-card{
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 40px;
+    padding: 50px;
+}
+
+.proj-header-img{
+    height: 20%;
+    width: 20%;
+}
+
+.proj-title-divider{
+    width: 1px;
+    height: 20vh;
+    background-color: black;
+    margin: 0px 100px;
+}
+
+.proj-title-date{
+    float: right;
+}
+
+.proj-title-team{
+    float: right;
+    clear: right;
+}
+
+.proj-para-title{
+    font-weight: 600;
+    color: #4F4D4D;
+    font-size: 18px;
+    padding-top:10px;
+}
+
+.back-to-top{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    padding: 5px;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    .project-title{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .my-container{
+        padding-top: 2.5vh;
+        padding-bottom: 2.5vh;
+    }
+    .nav-my-name{
+        font-size: 22px;
+        width: 100%;
+        text-align: center;
+    }
+    .my-nav-hr{
+        width: 80vw;
+        margin: auto;
+        border-color: #E5E5E5;
+        margin-bottom: 15px;
+    }
+    .card-img-left{
+        height: 50%;
+        width: 50%;
+    }
+    .project-card{
+        flex-direction: column !important;
+    }
+    .proj-content-card{
+        flex-direction: column !important;
+        padding: 5px;
+        margin: 5px;
+        margin-top: 20px;
+    }
+    .proj-header-img{
+        height: 70%;
+        width: 70%;
+        margin: auto;
+    }
+    .proj-content-title{
+        margin: auto;
+        padding: 10px;
+    }
+}
