@@ -1,7 +1,4 @@
-console.log("Hi");
-
 $(document).ready(function() {
-    console.log("ready!");
     $(".side-scroll").on('click', function(event){ 
         event.preventDefault();
         var o =  $( $(this).attr("href") ).offset();   
